@@ -10,6 +10,8 @@ namespace OKUL_OTOMASYON.Business.Abstract
     public interface ITeachersServices
     {
 
+        void KodGonder();
+
         List<Teachers> GetAll();
         bool isValid(string TCKN, string OgretmenNo, string Password);
     }

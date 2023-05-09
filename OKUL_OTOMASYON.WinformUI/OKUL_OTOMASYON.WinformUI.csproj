@@ -42,6 +42,7 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
     </Reference>
@@ -73,6 +74,12 @@
     <Compile Include="Teachers\TeachersHome.Designer.cs">
       <DependentUpon>TeachersHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserOperations\ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserOperations\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserOperations\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="Teachers\TeachersHome.resx">
       <DependentUpon>TeachersHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOperations\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserOperations\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

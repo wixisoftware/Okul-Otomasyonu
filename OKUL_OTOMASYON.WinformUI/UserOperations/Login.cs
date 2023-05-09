@@ -2,6 +2,7 @@
 using OKUL_OTOMASYON.Business.Concrete;
 using OKUL_OTOMASYON.DataAccessLayer.ContextBase.GenericRepository;
 using OKUL_OTOMASYON.Entities.Tables;
+using OKUL_OTOMASYON.WinformUI.Admin;
 using OKUL_OTOMASYON.WinformUI.Teachers;
 using System;
 using System.Collections.Generic;
@@ -175,16 +176,40 @@ namespace OKUL_OTOMASYON.WinformUI.UserOperations
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (mg.isValid(txtOgretmenTC.Text,txtOgretmenNo.Text,txtPassword.Text))
+           
+            if (mg.isValid(txtOgretmenTC.Text,txtOgretmenNo.Text,txtPassword.Text) && mg.isAdmin(txtOgretmenTC.Text, txtOgretmenNo.Text))
             {
-                var frm = CompositionRoot.Resolve <TeachersHome>();
+                var frm = CompositionRoot.Resolve <AdminHome>();
 
                 this.Hide();
                 frm.ShowDialog();
          
+            }else if(mg.isValid(txtOgretmenTC.Text, txtOgretmenNo.Text, txtPassword.Text))
+            {
+                var frm = CompositionRoot.Resolve<TeachersHome>();
+
+                this.Hide();
+                frm.ShowDialog();
+            }
+            else
+            {
+
+                MessageBox.Show("Sistemde böyle bir öğretmen kayıtlı değil", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
            
         }
 
+        private void txtOgretmenTC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var frm = CompositionRoot.Resolve<ForgetPassword>();
+
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }
