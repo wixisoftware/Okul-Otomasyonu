@@ -17,13 +17,13 @@ namespace OKUL_OTOMASYON.WinformUI
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+           Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             CompositionRoot.Initialize();
 
 
-            Application.Run(CompositionRoot.Resolve<Login>());
+            Application.Run(CompositionRoot.Resolve<NewPassword>());
         }
 
     }

@@ -45,12 +45,12 @@ namespace OKUL_OTOMASYON.Business.Concrete
 
         }
 
-
+        public string kod="";
        public void KodGonder()
         {
             // 6 haneli bir kod üreticeğiz
             Random rndm = new Random();
-            var kod = "";
+            
             for (int i = 0; i < 6; i++)
             {
                  kod += rndm.Next(0, 9).ToString();
@@ -64,5 +64,26 @@ namespace OKUL_OTOMASYON.Business.Concrete
 
         }
 
+        public bool IsCodeTrue(string Kod)
+        {
+            if (kod == Kod)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool GetTeacherWithInfo(string txtOgretmenNo, string txtTCKimlikNo, string txtEMail)
+        {
+            var result = _context.Get(i => i.OgretmenNo == txtOgretmenNo && i.TCKN == txtTCKimlikNo && i.Email == txtEMail);
+
+            if (result == null)
+            {
+                return false;
+
+            }
+
+            return true;
+        }
     }
 }

@@ -1,0 +1,24 @@
+
+//-- Mail' e giden kod doðru mu eþleþiyor mu diye InputBox'a girilen ifadenin doðruluðunun busines katmanýnda metotda yazdýrýlmasý 
+
+	//* Teachers tablosuna Mail kolonu eklendi
+	//* Öðretmen bilgileri sistemde var mý kontrolü yapýlýcak 
+
+
+-- Þifremi yenile ekranýn tasarlanmasý
+	* Textlerin * olarak gözükmesi iþlemi  
+	* check olunca yazýya dönmesi
+	* iki texttte uyuþuyor ise PowerDetected tan þifre skorunun alýnmasý 
+	* Salt Generatorden salt alýnýcak 10 karakterli 
+	* Hashlenip veritabasnýna gönderilicek
+
+-- PowerDetected Classýnýn kodlanmasý
+	* 90 üzeri bir puan alýrsa güvenli notu verilicek ve salt olarak kullanýma gidebilicek bu iki class birbiri ile eþli çalýþmalý 
+	* Yeni þifre belirler iken iki textin de birbirine uyumu doðru ise porgress bar buna göre renklendirilicek
+
+-- Salt Generator Un class ýnýn yazýlmasý 
+	* Yeni bir salt verirken PowerDetected Classýndan Güçlü onayý almak zorunda iþleme gidebilmesi için
+	* 10 Haneli karýþýk bir string dizisi üretmeli 
+
+
+-- Register Ekranýn Tasarlanmasý 

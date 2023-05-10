@@ -23,6 +23,7 @@ namespace OKUL_OTOMASYON.Entities.Tables
         public DateTime StartDate { get; set; }
         public string PasswordHash { get; set; }
         public string Salt { get; set; }
+        public string Email { get; set; }
 
 
 

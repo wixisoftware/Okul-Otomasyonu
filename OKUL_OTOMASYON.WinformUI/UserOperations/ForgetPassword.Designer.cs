@@ -95,25 +95,26 @@
             // 
             this.txtTCKimlikNo.Location = new System.Drawing.Point(186, 68);
             this.txtTCKimlikNo.Name = "txtTCKimlikNo";
-            this.txtTCKimlikNo.Size = new System.Drawing.Size(100, 20);
+            this.txtTCKimlikNo.Size = new System.Drawing.Size(170, 20);
             this.txtTCKimlikNo.TabIndex = 2;
             // 
             // txtOgretmenNo
             // 
             this.txtOgretmenNo.Location = new System.Drawing.Point(186, 94);
             this.txtOgretmenNo.Name = "txtOgretmenNo";
-            this.txtOgretmenNo.Size = new System.Drawing.Size(100, 20);
+            this.txtOgretmenNo.Size = new System.Drawing.Size(170, 20);
             this.txtOgretmenNo.TabIndex = 3;
             // 
             // txtEMail
             // 
             this.txtEMail.Location = new System.Drawing.Point(186, 120);
             this.txtEMail.Name = "txtEMail";
-            this.txtEMail.Size = new System.Drawing.Size(100, 20);
+            this.txtEMail.Size = new System.Drawing.Size(170, 20);
             this.txtEMail.TabIndex = 4;
             // 
             // btnKodGonder
             // 
+            this.btnKodGonder.ForeColor = System.Drawing.Color.Lime;
             this.btnKodGonder.Location = new System.Drawing.Point(211, 173);
             this.btnKodGonder.Name = "btnKodGonder";
             this.btnKodGonder.Size = new System.Drawing.Size(75, 23);
@@ -124,12 +125,13 @@
             // 
             // btnAnaSayfayaDon
             // 
+            this.btnAnaSayfayaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnAnaSayfayaDon.Location = new System.Drawing.Point(305, 172);
             this.btnAnaSayfayaDon.Name = "btnAnaSayfayaDon";
             this.btnAnaSayfayaDon.Size = new System.Drawing.Size(107, 24);
             this.btnAnaSayfayaDon.TabIndex = 6;
             this.btnAnaSayfayaDon.Text = "Ana Sayfaya Dön";
-            this.btnAnaSayfayaDon.UseVisualStyleBackColor = true;
+            this.btnAnaSayfayaDon.UseVisualStyleBackColor = false;
             this.btnAnaSayfayaDon.Click += new System.EventHandler(this.btnAnaSayfayaDon_Click);
             // 
             // label1
@@ -163,6 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(540, 216);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
